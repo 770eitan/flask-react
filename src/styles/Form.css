@@ -1,0 +1,74 @@
+.form-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0px 25px;
+  font-family: inherit;
+  flex-direction: column;
+}
+
+.form-container > section {
+  width: 100%;
+}
+
+.form-container h1 {
+  margin: 0px 0px 30px 0px;
+  font-size: clamp(3.0rem, 3vw, 3.5rem);
+}
+
+.form-container p {
+  width: 100%;
+  display: flex;
+  margin: 14px 0 0px;
+}
+
+.form-container input {
+  padding: 3px 6px;
+  font-size: var(--font-med);
+}
+
+.form-container form {
+  border: var(--borders);
+  padding: 25px 25px 30px 25px;
+  box-shadow: var(--card-box-shadow);
+  border-radius: var(--card-border-radius);
+}
+
+.form-container input {
+  width: 100%;
+  margin: 8px 0px 10px 0px;
+}
+
+.form-container .btn {
+  width: 100%;
+  margin-right: 0;
+  margin-top: 16px;
+  align-self: flex-end;
+}
+
+.red-text {
+  line-height: 1.5;
+  max-width: 500px;
+  word-wrap: break-word;
+  padding: 0px 0px 20px 24px;
+  color: rgb(194, 72, 72);
+}
+
+.form-container label {
+  font-weight: 500;
+  font-size: var(--font-med);
+}
+
+@media only screen and (min-width: 768px) {
+  .form-container {
+    display: flex;
+    padding: 10px 22px;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form-container > form {
+    width: 50%;
+  }
+}

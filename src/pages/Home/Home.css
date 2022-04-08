@@ -1,0 +1,114 @@
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.logo-container {
+  display: flex;
+  padding: 10px 8px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5px 0px 10px 0px;
+}
+
+.home-container > section {
+  width: 100%;
+}
+
+.home-container .logo-container {
+  max-width: 375px;
+  display: none;
+}
+
+.home-container .cat-logo-container {
+  width: 80%;
+}
+
+.login-container {
+  height: 100%;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+}
+
+.home-container .login {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-container .login h1 {
+  margin: 0px 0px 10px 0px;
+  font-size: clamp(3.2rem, 3vw, 4.8rem);
+}
+
+.home-container .login > p {
+  width: 100%;
+  display: flex;
+  margin: 14px 0 0px;
+  flex-direction: column;
+}
+
+.home-container .login label {
+  margin-bottom: 6px;
+  font-size: var(--font-reg);
+}
+
+.home-container .login input {
+  padding: 4px 8px;
+  font-size: var(--font-l);
+}
+
+.home-container .login input, label {
+  width: 100%;
+  margin: 3px 0px 10px 0px;
+}
+
+.home-container .login .btn {
+  width: 100%;
+  margin-right: 0;
+  margin-top: 16px;
+  align-self: flex-end;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-container {
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    min-height: calc(100vh - 55px);
+  }
+
+  .login-container {
+    margin-top: none;
+    display: flex;
+    padding: 10px 8px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .home-container > section {
+    width: 40%;
+  }
+
+  .home-container .login {
+    width: 100%;
+    border: var(--borders);
+    padding: 25px 25px 30px 25px;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-box-shadow);
+  }
+
+  .home-container .logo-container {
+    max-width: 520px;
+    display: flex;
+  }
+}

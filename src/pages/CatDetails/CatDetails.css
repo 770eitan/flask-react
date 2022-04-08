@@ -1,0 +1,272 @@
+.cat-container {
+  display: flex;
+  padding: 35px 30px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cat-img {
+  width: 75%;
+  max-width: 350px;
+}
+
+.usr-img {
+  width: 100%;
+  border-radius: var(--card-border-radius);
+}
+
+.cat-details {
+  width: 98%;
+}
+
+.actions {
+  margin-top: 15px;
+}
+
+.feedings-toy-container {
+  display: flex;
+  padding: 0px 36px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.subsection-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.subsection-content {
+  margin: 0 8px;
+}
+
+.toy-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.toy-container form {
+  margin-left: auto;
+}
+
+.color-block {
+  width: 25px;
+  height: 25px;
+  opacity: 0.8;
+  border-radius: 4px;
+  margin-right: 10px;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.unfed,
+.fed,
+.no-toys,
+.all-toys {
+  margin: 0;
+  font-weight: bold;
+  font-size: var(--font-l);
+}
+
+.unfed,
+.no-toys {
+  color: var(--danger);
+  font-size: var(--font-l);
+}
+
+.fed,
+.all-toys {
+  color: var(--submit);
+}
+
+p.unfed, p.fed {
+  margin-bottom: 10px;
+}
+
+.cat-details h1 {
+  margin: 15px 0 3px;
+  font-size: var(--font-xxl);
+}
+
+.cat-details h2 {
+  margin-top: 0;
+  margin: 0 0 10px;
+  margin-bottom: 10px;
+  font-size: var(--font-xl);
+}
+
+.cat-details h3 {
+  margin: 20px 0 10px;
+  font-size: var(--font-l);
+}
+
+.cat-details p {
+  font-size: var(--font-reg);
+  margin: 5px 0;
+}
+
+.feedings-toy-container > section {
+  width: 100%;
+  padding: 14px;
+  display: flex;
+  min-width: 360px;
+  margin-bottom: 20px;
+  flex-direction: column;
+  justify-content: center;
+  border: var(--borders);
+  box-shadow: var(--card-box-shadow);
+  border-radius: var(--card-border-radius);
+}
+
+.feedings form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.feedings form div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-reg);
+}
+
+.feedings form div select, input {
+  width: 100%;
+  padding: 3px;
+  margin: 5px 0px;
+  border-radius: 4px;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.feedings form div label {
+  max-width: 120px;
+}
+
+.feedings form button {
+  width: 100%;
+  margin: 10px 0px 8px 0px;
+}
+
+.subsection-title img {
+  height: 42px;
+  margin-left: 8px;
+}
+
+.subsection-title img:first-of-type {
+  margin-left: 16px;
+}
+
+.feedings h2,
+.toys h2 {
+  margin: 0;
+  font-size: 3.2rem;
+}
+
+.feedings h3,
+.toys h3 {
+  margin: 10px 0;
+  font-size: var(--font-xl);
+}
+
+.subsection-content p,
+.subsection-content input,
+.subsection-content select {
+  font-size: var(--font-l);
+}
+
+.subsection-content input,
+.subsection-content select {
+  padding: 3px;
+  margin-left: 5px;
+}
+
+.feedings table {
+  width: calc(100% - 16px);
+  text-align: left;
+  border-collapse: collapse;
+  margin: 0 8px;
+}
+
+.feedings td {
+  padding: 8px 5px;
+  font-size: var(--font-reg);
+}
+
+.feedings th {
+  padding: 5px 5px 0;
+  font-size: var(--font-l);
+  border-bottom: rgb(36, 116, 248) solid 2px;
+}
+
+.feedings tr:nth-child(even) {
+  background-color: #f3f3fd;
+}
+
+.toy-container p {
+  margin: 12px 0;
+}
+
+.toy-container a {
+  color: #111;
+  text-decoration: none;
+}
+
+.toy-container .btn {
+  padding: 3px 10px;
+  margin-left: 10px;
+}
+
+#file-input {
+  width: 0.1px;
+  height: 0.1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+#file-name {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .cat-container {
+    padding: 35px 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .cat-img {
+    width: 25%;
+    max-width: 250px;
+    margin-right: 25px;
+  }
+
+  .feedings-toy-container {
+    padding: 0 40px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .feedings-toy-container > section {
+    width: 45%;
+  }
+  
+  .feedings {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .feedings-toy-container {
+    padding: 0 40px;
+  }
+
+  .feedings {
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,78 @@
+.toy-card-container {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+
+.toy-card {
+  width: 100%;
+  display: flex;
+  border: solid 2px;
+  position: relative;
+  border-radius: 5px;
+  padding: 20vw 15px;
+  align-items: flex-end;
+  text-decoration: none;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: var(--text-color);
+  margin: 12px 20px 0px 0px;
+  box-shadow: var(--card-box-shadow);
+}
+
+.toy-card h2 {
+  margin: 7px 0;
+  font-size: var(--font-xl);
+}
+
+.toy-card p {
+  margin: 0;
+  font-size: var(--font-reg);
+}
+
+.page-header > img {
+  margin-left: 10px;
+}
+
+.page-header > img:first-of-type {
+  margin-left: 15px;
+}
+
+@media only screen and (min-width: 560px) {
+  .toy-card  {
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .toy-card-container {
+    width: 100vw;
+    display: grid;
+    padding: 0 15px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  }
+  .toy-card  {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .toy-card-container {
+    width: 100vw;
+    display: grid;
+    padding: 0 15px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .toy-card  {
+    width: 280px;
+    height: 280px;
+    padding: 15px;
+  }
+}

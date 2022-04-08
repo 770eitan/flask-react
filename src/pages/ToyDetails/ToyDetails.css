@@ -1,0 +1,45 @@
+.toy-details-container {
+  display: flex;
+  padding: 35px 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.toy-details-container h1 {
+  margin: 15px 0 3px;
+  font-size: var(--font-xxl);
+}
+
+.toy-details-container p {
+  margin: 5px 0;
+  font-size: var(--font-reg);
+}
+
+
+.usr-img {
+  width: 100%;
+  border-radius: var(--card-border-radius);
+}
+
+.toy-details {
+  width: 98%;
+}
+
+.toy-actions {
+  margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .toy-details-container {
+    display: flex;
+    padding: 35px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .toy-img {
+    width: 100%;
+  }
+}
+
